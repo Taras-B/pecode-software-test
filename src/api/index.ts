@@ -6,7 +6,7 @@ const BASE_URL = {
   episodes: 'https://rickandmortyapi.com/api/episode',
 }
 
-export const rickAPI = {
+export const rickAndMortyAPI = {
   getCharacters(): Promise<IInfoAndPagination | ICharacterData> {
     return fetch(BASE_URL.characters)
       .then((res) => res.json())
