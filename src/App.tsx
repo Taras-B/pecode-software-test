@@ -1,9 +1,15 @@
 import React from 'react'
 
 import './App.css'
+import { Header } from './components/Header/Header'
 
 function App() {
-  return <div>home</div>
+  return (
+    <div>
+      <Header />
+      home
+    </div>
+  )
 }
 
 export default App
