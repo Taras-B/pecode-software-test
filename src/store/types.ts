@@ -39,3 +39,9 @@ export interface IEpisodeData extends ICommonData {
   episode: string
   characters: string[]
 }
+
+export enum LoadingState {
+  LOADING = 'LOADING',
+  LOADED = 'LOADED',
+  ERROR = 'ERROR',
+}
