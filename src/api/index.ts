@@ -17,8 +17,8 @@ export const rickAndMortyAPI = {
       .then((res) => res.json())
       .catch((e) => console.log(e))
   },
-  getEpisodes() {
-    return fetch(BASE_URL.episodes)
+  getEpisodes(page: number) {
+    return fetch(`${BASE_URL.episodes}/?page=${page}`)
       .then((res) => res.json())
       .catch((e) => console.log(e))
   },

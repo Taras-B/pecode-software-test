@@ -6,13 +6,13 @@ import { EnumCharactersActionType, IFetchCharactersAction } from './types'
 function* getCharacter({ payload }: IFetchCharactersAction) {
   try {
     const data = yield call(rickAndMortyAPI.getCharacters, payload)
-    console.log(data)
     if (data?.error) {
       yield put(actionsCharacters.setData([]))
       yield put(actionsCharacters.setInfo(null))
+    } else {
+      yield put(actionsCharacters.setData(data.results))
+      yield put(actionsCharacters.setInfo(data.info))
     }
-    yield put(actionsCharacters.setData(data.results))
-    yield put(actionsCharacters.setInfo(data.info))
   } catch (e) {
     console.log(e)
   }

@@ -11,7 +11,7 @@ export const charactersReducer = produce(
   (draft: Draft<ICharactersState>, action: CharactersActionType) => {
     switch (action.type) {
       case EnumCharactersActionType.FETCH_CHARACTERS:
-        draft.data = []
+        draft.data = null
         break
       case EnumCharactersActionType.SET_CHARACTERS_DATA:
         draft.data = action.payload
