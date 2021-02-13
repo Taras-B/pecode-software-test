@@ -3,7 +3,7 @@ import { ICharacterData, IInfoAndPagination } from '../types'
 
 export interface ICharactersState {
   infoData: IInfoAndPagination | null
-  data: ICharacterData[]
+  data: ICharacterData[] | null
   currentPage: number
 }
 
@@ -17,14 +17,15 @@ export enum EnumCharactersActionType {
 
 export interface IFetchCharactersAction extends Action<EnumCharactersActionType> {
   type: EnumCharactersActionType.FETCH_CHARACTERS
+  payload: number
 }
 export interface ISetCharactersDataAction extends Action<EnumCharactersActionType> {
   type: EnumCharactersActionType.SET_CHARACTERS_DATA
-  payload: Array<ICharacterData>
+  payload: Array<ICharacterData> | null
 }
 export interface ISetCharactersInfoAction extends Action<EnumCharactersActionType> {
   type: EnumCharactersActionType.SET_CHARACTERS_INFO
-  payload: IInfoAndPagination
+  payload: IInfoAndPagination | null
 }
 
 export type CharactersActionType =

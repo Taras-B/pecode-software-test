@@ -7,14 +7,15 @@ import {
 } from './types'
 
 export const actionsCharacters = {
-  fetch: (): IFetchCharactersAction => ({
+  fetch: (payload: number): IFetchCharactersAction => ({
     type: EnumCharactersActionType.FETCH_CHARACTERS,
+    payload,
   }),
-  setData: (payload: ICharacterData[]): ISetCharactersDataAction => ({
+  setData: (payload: ICharacterData[] | null): ISetCharactersDataAction => ({
     type: EnumCharactersActionType.SET_CHARACTERS_DATA,
     payload,
   }),
-  setInfo: (payload: IInfoAndPagination): ISetCharactersInfoAction => ({
+  setInfo: (payload: IInfoAndPagination | null): ISetCharactersInfoAction => ({
     type: EnumCharactersActionType.SET_CHARACTERS_INFO,
     payload,
   }),

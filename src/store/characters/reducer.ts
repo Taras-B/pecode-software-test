@@ -3,7 +3,7 @@ import { CharactersActionType, EnumCharactersActionType, ICharactersState } from
 
 const initialCharactersState: ICharactersState = {
   infoData: null,
-  data: [],
+  data: null,
   currentPage: 1,
 }
 

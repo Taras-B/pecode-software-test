@@ -7,8 +7,8 @@ const BASE_URL = {
 }
 
 export const rickAndMortyAPI = {
-  getCharacters(): Promise<IInfoAndPagination | ICharacterData> {
-    return fetch(BASE_URL.characters)
+  getCharacters(page: number = 1): Promise<IInfoAndPagination | ICharacterData> {
+    return fetch(`${BASE_URL.characters}/?page=${page}`)
       .then((res) => res.json())
       .catch((e) => console.log(e))
   },
