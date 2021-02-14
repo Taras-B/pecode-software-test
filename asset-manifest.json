@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pecode-software-test/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/pecode-software-test/static/js/main.1e16c871.chunk.js",
+    "main.js.map": "/pecode-software-test/static/js/main.1e16c871.chunk.js.map",
+    "runtime-main.js": "/pecode-software-test/static/js/runtime-main.2da2bc4b.js",
+    "runtime-main.js.map": "/pecode-software-test/static/js/runtime-main.2da2bc4b.js.map",
+    "static/js/2.6a4eed26.chunk.js": "/pecode-software-test/static/js/2.6a4eed26.chunk.js",
+    "static/js/2.6a4eed26.chunk.js.map": "/pecode-software-test/static/js/2.6a4eed26.chunk.js.map",
+    "static/js/3.e7d6c309.chunk.js": "/pecode-software-test/static/js/3.e7d6c309.chunk.js",
+    "static/js/3.e7d6c309.chunk.js.map": "/pecode-software-test/static/js/3.e7d6c309.chunk.js.map",
+    "index.html": "/pecode-software-test/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/pecode-software-test/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.6a4eed26.chunk.js.LICENSE.txt": "/pecode-software-test/static/js/2.6a4eed26.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2da2bc4b.js",
+    "static/js/2.6a4eed26.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.1e16c871.chunk.js"
+  ]
+}
