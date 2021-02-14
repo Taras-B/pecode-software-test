@@ -6,7 +6,6 @@ import { EnumEpisodesActionType, IFetchEpisodesAction } from './types'
 function* getEpisodes({ payload }: IFetchEpisodesAction) {
   try {
     const data = yield call(rickAndMortyAPI.getEpisodes, payload)
-    console.log(data)
 
     if (data?.error) {
       yield put(actionsEpisode.setData([]))
