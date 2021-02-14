@@ -1,4 +1,4 @@
-import { ICharacterData, IInfoAndPagination } from '../types'
+import { ICharacterData, IInfoAndPagination } from '../rootTypes'
 import {
   EnumCharactersActionType,
   IFetchCharactersAction,

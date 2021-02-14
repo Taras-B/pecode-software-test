@@ -1,5 +1,5 @@
 import { Action } from 'redux'
-import { ICharacterData, IInfoAndPagination } from '../types'
+import { ICharacterData, IInfoAndPagination } from '../rootTypes'
 
 export interface ICharactersState {
   infoData: IInfoAndPagination | null

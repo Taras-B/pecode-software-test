@@ -1,4 +1,4 @@
-import { IEpisodeData, IInfoAndPagination } from '../types'
+import { IEpisodeData, IInfoAndPagination } from '../rootTypes'
 import {
   EnumEpisodesActionType,
   IFetchEpisodesAction,

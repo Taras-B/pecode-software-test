@@ -6,7 +6,7 @@ import { EnumLocationsActionType, IFetchLocationsAction } from './types'
 function* getLocations({ payload }: IFetchLocationsAction) {
   try {
     const data = yield call(rickAndMortyAPI.getLocations, payload)
-    console.log(data)
+    console.log('LOCATIONS', data)
 
     if (data?.error) {
       yield put(actionsLocation.setData([]))

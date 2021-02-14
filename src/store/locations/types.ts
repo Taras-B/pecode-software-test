@@ -1,5 +1,5 @@
 import { Action } from 'redux'
-import { ILocationData, IInfoAndPagination } from '../types'
+import { ILocationData, IInfoAndPagination } from '../rootTypes'
 
 export interface ILocationsState {
   infoData: IInfoAndPagination | null

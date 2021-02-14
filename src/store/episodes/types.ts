@@ -1,5 +1,5 @@
 import { Action } from 'redux'
-import { IEpisodeData, IInfoAndPagination } from '../types'
+import { IEpisodeData, IInfoAndPagination } from '../rootTypes'
 
 export interface IEpisodesState {
   infoData: IInfoAndPagination | null

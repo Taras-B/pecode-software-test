@@ -1,4 +1,4 @@
-import { ICharacterData, IInfoAndPagination } from '../store/types'
+import { ICharacterData, IInfoAndPagination } from '../store/rootTypes'
 
 const BASE_URL = {
   characters: 'https://rickandmortyapi.com/api/character',

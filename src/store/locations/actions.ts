@@ -1,4 +1,4 @@
-import { ILocationData, IInfoAndPagination } from '../types'
+import { ILocationData, IInfoAndPagination } from '../rootTypes'
 import {
   EnumLocationsActionType,
   IFetchLocationsAction,
