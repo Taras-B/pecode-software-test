@@ -43,7 +43,6 @@ export const Characters = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  //TODO Create component "NOT YET ..."
   if (!characters) return <Typography>Not yet characters</Typography>
   return (
     <Grid container justify='space-between' className={classes.wrapper} spacing={4}>

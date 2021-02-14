@@ -10,8 +10,6 @@ export enum EnumEpisodesActionType {
   FETCH_EPISODES = 'characters/FETCH_EPISODES',
   SET_EPISODES_DATA = 'characters/SET_EPISODES_DATA',
   SET_EPISODES_INFO = 'characters/SET_EPISODES_INFO',
-  FETCH_UPDATE_PAGE_EPISODES = 'characters/FETCH_UPDATE_PAGE_EPISODES',
-  SET_LOADING = 'characters/SET_LOADING',
 }
 
 export interface IFetchEpisodesAction extends Action<EnumEpisodesActionType> {

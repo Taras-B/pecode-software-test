@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import Grid from '@material-ui/core/Grid'
+import { makeStyles, Theme } from '@material-ui/core'
 import {
   Columns,
   DataGrid,
@@ -10,7 +11,6 @@ import {
 } from '@material-ui/data-grid'
 import { RootState } from '../../store/rootReducer'
 import { actionsLocation } from '../../store/locations/actions'
-import { makeStyles, Theme } from '@material-ui/core'
 
 const columns: Columns = [
   {

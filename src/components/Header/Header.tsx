@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import AppBar from '@material-ui/core/AppBar'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Divider from '@material-ui/core/Divider'
@@ -18,7 +20,6 @@ import AccountCircleTwoToneIcon from '@material-ui/icons/AccountCircleTwoTone'
 import AddToQueueTwoToneIcon from '@material-ui/icons/AddToQueueTwoTone'
 import PinDropTwoToneIcon from '@material-ui/icons/PinDropTwoTone'
 import FavoriteTwoToneIcon from '@material-ui/icons/FavoriteTwoTone'
-import { Link } from 'react-router-dom'
 import SvgIcon from '@material-ui/core/SvgIcon'
 
 const drawerWidth = 240

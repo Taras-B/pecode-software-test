@@ -13,14 +13,14 @@ import Divider from '@material-ui/core/Divider'
 import Dialog from '@material-ui/core/Dialog'
 import { CustomModal } from '../Modal/CustomModal'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
     maxWidth: 460,
   },
   media: {
     height: 180,
   },
-}))
+})
 
 export interface IPropsCharacter {
   image: string
