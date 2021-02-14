@@ -10,8 +10,6 @@ export enum EnumLocationsActionType {
   FETCH_LOCATION = 'locations/FETCH_LOCATION',
   SET_LOCATION_DATA = 'locations/SET_LOCATION_DATA',
   SET_LOCATION_INFO = 'locations/SET_LOCATION_INFO',
-  FETCH_UPDATE_PAGE_LOCATION = 'locations/FETCH_UPDATE_PAGE_LOCATION',
-  SET_LOADING = 'locations/SET_LOADING',
 }
 
 export interface IFetchLocationsAction extends Action<EnumLocationsActionType> {
