@@ -4,10 +4,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import Grid from '@material-ui/core/Grid'
 import {
   Columns,
-  RowsProp,
   DataGrid,
-  SortDirection,
-  ValueGetterParams,
+  ValueFormatterParams,
   PageChangeParams,
 } from '@material-ui/data-grid'
 import { RootState } from '../../store/rootReducer'
@@ -21,14 +19,16 @@ const columns: Columns = [
     width: 250,
   },
   { field: 'episode', width: 150, headerName: 'Episode' },
-  { field: 'created', width: 250, headerName: 'Created' },
-]
-const sortModel = [
   {
-    field: 'name',
-    sort: 'asc' as SortDirection,
+    field: 'created',
+    width: 250,
+    headerName: 'Created',
+    type: 'date',
+    valueFormatter: (params: ValueFormatterParams) =>
+      new Intl.DateTimeFormat('ua-UA').format(new Date(params.value as Date)),
   },
 ]
+
 export const Episodes = () => {
   const [page, setPage] = React.useState(1)
   const dispatch = useDispatch()
@@ -37,7 +37,6 @@ export const Episodes = () => {
   const info = useSelector((state: RootState) => state.episodes.infoData)
 
   const handlePageChange = (params: PageChangeParams) => {
-    // dispatch(actionsEpisode.fetch(params.page))
     setPage(params.page)
   }
   useEffect(() => {
@@ -52,9 +51,11 @@ export const Episodes = () => {
         <DataGrid
           autoHeight
           pageSize={20}
+          rowHeight={25}
           onPageChange={handlePageChange}
           paginationMode='server'
           rowCount={info?.count}
+          sortingOrder={['desc', 'asc']}
           pagination
           rows={episodes}
           columns={columns}

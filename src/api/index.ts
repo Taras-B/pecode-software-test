@@ -12,8 +12,8 @@ export const rickAndMortyAPI = {
       .then((res) => res.json())
       .catch((e) => console.log(e))
   },
-  getLocations() {
-    return fetch(BASE_URL.locations)
+  getLocations(page: number) {
+    return fetch(`${BASE_URL.locations}/?page=${page}`)
       .then((res) => res.json())
       .catch((e) => console.log(e))
   },

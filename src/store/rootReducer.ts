@@ -7,6 +7,7 @@ import { IEpisodesState } from './episodes/types'
 export const rootReducer = combineReducers({
   characters: charactersReducer,
   episodes: episodesReducer,
+  // locations: locationsReducer,
 })
 
 export type RootState = {
